@@ -1,0 +1,23 @@
+.pdf {
+  border: 0.25rem solid var(--black);
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 0 var(--blackAlpha);
+  padding-bottom: 137.3%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.pdf div {
+  position: absolute;
+  font-weight: 500;
+}
+
+.pdf .loader {
+  padding: 1.5rem;
+}
+
+.react-pdf__Page__canvas {
+  width: 100% !important;
+  height: initial !important;
+}

@@ -1,38 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Poppins:wght@800&display=swap');
+
+:root {
+  --blue: #0379FF;
+  --light-blue: #9AC9FF;
+  --dark-blue: #0261CC;
+  --white: #fff;
+  --black: #101820;
+  --blackAlpha: #10182010;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
 .App {
-  text-align: center;
+  font-family: 'IBM Plex Sans';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-left: 8.5rem;
+}
+
+button {
+  font-size: 1.25rem;
+  background-color: var(--blue);
+  border-radius: 6px;
+  border: 0;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+footer {
+  padding-top: 4rem;
+}
+
+.download {
+  background-color: var(--dark-blue);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 1.25rem;
+  border-radius: 6px;
+  border: 0;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: right;
+  text-decoration: none;
 }

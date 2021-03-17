@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-family: 'Poppins';
+  color: var(--blue);
+  padding: 2rem;
+  font-size: 2.5rem;
+}
